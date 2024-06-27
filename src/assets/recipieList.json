@@ -1,0 +1,85 @@
+{
+    "recipie": [
+        {
+            "recipie_id": 1,
+            "collection_ids": [1, 2],
+            "image_url": "https://design4users.com/wp-content/uploads/2023/03/food-illustration-by-helen-lee.jpg",
+            "name": "Köttfärsås och spagetti ",
+            "rating": 3.5,
+            "allergens": {
+                "beef": true,
+                "chicken": false,
+                "pork": false,
+                "fish": false,
+                "shellfish": false,
+                "vegan": false,
+                "milk": true,
+                "gluten": true,
+                "nuts": false,
+                "soy": true,
+                "eggs": true,
+                "sesame": false
+            },
+            "time": "60+ min",
+            "tags": [
+                {
+                    "value": "TEST-TAG"
+                }
+            ]
+        },
+        {
+            "recipie_id": 2,
+            "collection_ids": [1,3],
+            "image_url": "https://design4users.com/wp-content/uploads/2023/03/food-illustration-by-helen-lee.jpg",
+            "name": "Köttfärsås och Köttfärsås ",
+            "rating": 2,
+            "allergens": {
+                "beef": true,
+                "chicken": true,
+                "pork": true,
+                "fish": false,
+                "shellfish": false,
+                "vegan": false,
+                "milk": false,
+                "gluten": false,
+                "nuts": false,
+                "soy": false,
+                "eggs": false,
+                "sesame": false
+            },
+            "time": "60+ min",
+            "tags": [
+                {
+                    "value": "TEST-TAG"
+                }
+            ]
+        },
+        {
+            "recipie_id": 3,
+            "collection_ids": [1, 2, 3],
+            "image_url": "https://design4users.com/wp-content/uploads/2023/03/food-illustration-by-helen-lee.jpg",
+            "name": "spagetti och spagetti ",
+            "rating": 5,
+            "allergens": {
+                "beef": false,
+                "chicken": false,
+                "pork": false,
+                "fish": false,
+                "shellfish": false,
+                "vegan": true,
+                "milk": true,
+                "gluten": true,
+                "nuts": false,
+                "soy": true,
+                "eggs": true,
+                "sesame": false
+            },
+            "time": "60+ min",
+            "tags": [
+                {
+                    "value": "TEST-TAG"
+                }
+            ]
+        }
+    ]
+}

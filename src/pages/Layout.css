@@ -1,0 +1,309 @@
+/*Navigation*/
+.nav-color-fade {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), var(--navbar-color));
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 10%;
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 1em 1.5em;
+}
+
+.nav-menu {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition-timing-function: ease;
+}
+
+.nav-menu a:hover {
+    color: var(--on-secondary-highlight-color);
+    font-weight: 550;
+
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+}
+
+
+#logo img {
+    align-self: flex-start;
+    width: 50px;
+    height: auto;
+}
+
+.nav-menu a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 550;
+}
+
+.nav-menu a.active:hover {
+    color: var(--secondary-highlight-color);
+    border-bottom: 2px solid var(--secondary-highlight-color);
+}
+
+.nav-menu a.active:active {
+    transition: 0.1s;
+    scale: 0.985;
+}
+
+#hire-me-button {
+    background-color: var(--teritary-container-color);
+    color: var(--on-teritary-container-color);
+    border-radius: 3vmin;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    padding: 0.7rem;
+    box-shadow: 5px 10px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+#hire-me-button:hover {
+    color: var(--teritary-highlight-container-color);
+}
+
+#hire-me-button:active {
+    scale: 0.92;
+    background-color: var(--on-teritary-color);
+    color: var(--teritary-color);
+}
+
+#hire-me-button.active {
+    border-radius: 0;
+    color: var(--primary-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#hire-me-button.active:hover {
+    color: var(--secondary-highlight-color);
+
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-menu.is-visible {
+    display: block;
+}
+
+
+/*Hamburger nav*/
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .fa-bars {
+    font-size: 2rem;
+}
+
+/*Toggle hamburger menu*/
+@media (max-width: 820px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hamburger-menu span {
+        font-size: 3rem;
+        color: var(--secondary-color);
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-menu span:hover {
+        color: var(--on-secondary-highlight-color-color);
+        scale: 1.02;
+    }
+
+
+    #logo {
+        z-index: 3;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: var(--background-color);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .nav-menu.is-visible {
+        max-height: 2000px;
+    }
+
+    .nav-menu ul {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        font-size: 2.5rem;
+        border-bottom: 1px solid var(--surface--color);
+    }
+
+    #hire-me-button {
+        padding: 1rem;
+    }
+}
+
+
+
+/* Toggle button for light/darkmode */
+#theme-toggle {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+#theme-toggle:hover {
+    color: var(--on-secondary-highlight-color-color);
+    scale: 1.02;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35vh;
+    margin-bottom: 0.5rem;
+    /* background-color: #222628; */
+}
+
+#footer-logo {
+    width: auto;
+    height: 60px;
+}
+
+.img-links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-links-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 0.3rem;
+    color: var(--on-background-color);
+}
+
+.img-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-button-container .my-btn {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    margin-left: 1rem;
+}
+
+
+#copyright-text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: var(--on-surface--color);
+    align-self: center;
+}
+
+/*Responsitivity*/
+@media (max-width: 820px) {
+    .img-button-container .my-btn {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+        margin-left: 1rem;
+    }
+
+    .img-links-container .social-link {
+        font-size: 3rem;
+    }
+
+    #theme-toggle {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        left: 48%;
+        top: 1px;
+        transform: translateY(50%);
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-menu ul li {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #hire-me-button {
+        font-size: 1.8rem;
+    }
+
+
+    .img-button-container .my-btn {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+        margin-left: 0.5rem;
+    }
+
+    /*Footer section*/
+    #footer-logo {
+        height: 45px;
+    }
+
+    .img-links-container .social-link {
+        font-size: 2.2rem;
+    }
+
+    #copyright-text {
+        font-size: 0.8rem;
+    }
+}

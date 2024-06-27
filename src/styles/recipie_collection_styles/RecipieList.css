@@ -1,0 +1,26 @@
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.recipie-container {
+    height: 30vh;
+}
+
+.top-container {
+    background-color: #f0f0f0;
+}
+
+.top-container img {
+    width: 100%;
+    height: auto;
+}
+
+.info-container {
+    background-color: #616161
+}
+
+.allergens-container {
+}

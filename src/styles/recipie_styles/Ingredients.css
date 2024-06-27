@@ -1,0 +1,61 @@
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ingredients-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    margin: 1.5vh 0;
+    padding: 1rem;
+    color: #616161;
+    background-color: #f0f0f0;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.ingredient-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* PortionSelector styling */
+.ingredient-buttons {
+    background-color: #f0f0f0;
+    padding: 0 0.1rem;
+    border-radius: 2.5vmin;
+}
+
+.ingredient-header .btn-group{
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+}
+
+.ingredient-header .btn-group p{
+    font-size: 1.3rem;
+}
+
+.ingredient-header .btn-group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 3vmin;
+    border: none;
+    font-size: 2rem;
+    background-color: #ff9800;
+}
+
+.ingredient-header .btn-group > *{
+    margin: 0 0.4rem;
+}
