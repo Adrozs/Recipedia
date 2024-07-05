@@ -22,7 +22,7 @@ export const Instructions = ({ instructions }) => {
             <h2>Instructions</h2>
             <ol className='instructions-container'>
                 {instructions.map((instruction, i) => (
-                    <li className="instruction shadow" key={i} onClick={() => handleCheckboxClick(i)}>
+                    <li className={`instruction shadow ${checkedState[i] ? 'crossed-off' : ''}`} key={i} onClick={() => handleCheckboxClick(i)}>
                         <img className="checkbox-icons" 
                         src={`${checkboxLink}${checkedState[i] ? checked : unchecked}`}
                         alt="checkbox" 

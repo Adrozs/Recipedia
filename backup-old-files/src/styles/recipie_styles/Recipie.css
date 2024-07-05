@@ -1,3 +1,8 @@
+.content-width {
+    width: 90%;
+    margin: auto;
+}
+
 .recipie-container {
     position: relative;
     display: flex;
@@ -34,7 +39,7 @@
     height: 100%;
     min-height: 500px;
     padding: 20px 0;
-    color: #ffffff;
+    color: white;
 }
 
 .icon-container {
@@ -48,6 +53,16 @@
     margin-bottom: 1%;
 }
 
+.icons {
+    width: 48px;
+    height: auto;
+}
+
+.star-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 2px;
+}
 
 .info-text-container {
     display: flex;
@@ -66,6 +81,12 @@
     width: 100%;
     margin: 0.7rem  auto 0.3rem auto;
 }
+
+.ingredient-icons {
+    width: 42px;
+    margin-right: 5px;
+}
+
 
 .recipie-stats {
     display: flex;
@@ -94,6 +115,10 @@
     align-items: center;
 }
 
+.stats-icons {
+    width: 64px;
+}
+
 .ingredients-section {
     display: flex;
     flex-direction: column;
@@ -111,64 +136,10 @@
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.options-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
-    z-index: 11;
-}
 
-.options-menu button {
-    font-size: 2rem;
-    width: 75%;
-    height: 8%;
-    text-align: center;
-    margin: 6% 0 6% 0;
-    border-radius: 3vmin;
-}
-
-/* PortionSelector styling */
-.ingredient-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.ingredient-buttons {
-    background-color: #f0f0f0;
-    padding: 0 0.1rem;
-    border-radius: 2.5vmin;
-}
-
-.ingredient-header .btn-group {
-    display: flex;
-    align-items: center;
-    height: 3.6rem;
-}
-
-.ingredient-header .btn-group p {
-    font-size: 1.3rem;
-}
-
-.ingredient-header .btn-group button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border: none;
-    background-color: transparent;
-}
-
-.ingredient-header .btn-group>* {
-    margin: 0 0.4rem;
+/* For the ingredients and instructions components*/
+.checkbox-icons {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
 }

@@ -1,15 +1,39 @@
 :root {
+  --primary-green: #4caf50;
+  --secondary-green: #8bc34a;
+  --accent-orange: #ff9800;
+  --background: #ffffff;
+  --text: #616161;
+
+  /*on background*/  
+  --card: #f0f0f0;
+
+  /*use with card-alt-border*/
+  --card-alt: #fdfdfd;
+  --card-alt-border: #ebebeb;
+
+  /*darker version for special situations neither other cards work*/  
+  --card-alt2: #e0e0e0;
+
+  --placeholder-grey: rgba(97, 97, 97, 0.725);
+
+
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #616161;
-  background-color: #FFFFFF;
+  color: var(--text);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::placeholder {
+  color: var(--placeholder-grey);
+  opacity: 1; /* Firefox compability*/
 }
 
 .primary-font {
@@ -22,6 +46,10 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
+.content-width {
+  width: 90%;
+  margin: auto;
+}
 
 body {
   margin: 0;
@@ -33,10 +61,243 @@ body {
   min-height: 100vh;
 }
 
+.add-item, .add-item-alt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 3vh;
+  height: 8vh;
+  background-color: #ff9800;
+  border-radius: 3vmin;
+}
+
+.add-item-alt {
+  color: #ff9800;
+  background-color: #fffcfa;
+  border: 3px solid #ff9800;
+}
+
+.myBtns, .myBtns-primary, .myBtns-secondary, .myBtns-teritary, .myBtns-cancel  {
+  margin-top: 2%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.8rem;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+
+.myBtns-primary {
+    color: #FFFFFF;
+    background-color: #ff9800;
+}
+
+.myBtns-secondary {
+    color: #ff9800;
+    background-color: #fffcfa;
+    border: 3px solid #ff9800;
+}
+
+.myBtns-teritary {
+    color: #616161;
+    background-color: #f0f0f0;
+}
+
+.myBtns-cancel {
+  color: #FFFFFF;
+  background-color: #FF6347;
+}
+
+
+.back-icon-alt {
+    position: absolute;
+    width: 24px;
+    height: auto;
+    margin: 4% 2%;
+    z-index: 10;
+}
+
+.back-icon {
+  width: 24px;
+  height: auto;
+  z-index: 10;
+}
+
+/* Icons */
+.icons {
+  width: 48px;
+  height: auto;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.stats-icons {
+  width: 64px;
+}
+
+.portion-icons {
+  width: 32px;
+}
+
+.star-icon {
+  width: 18px;
+  height: auto;
+  margin-right: 2px;
+}
+
+.ingredient-icons {
+  width: 42px;
+  margin-right: 5px;
+}
+
+.allergen-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.close-icon {
+  align-self: flex-end;
+  margin: 2% 2% 0 0;
+}
+
+.edit-img-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  margin: 3%;
+}
+
+.trash-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* For the ingredients and instructions components*/
+.checkbox-icons {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+/* Styling */
 .bold-text {
   font-weight: bold;
+}
+
+.bold-text-sm {
+  font-weight: 450;
+}
+
+.center-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-child > * {
+  align-self: center;
 }
 
 .shadow {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+
+.shadow-big {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.crossed-off {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.mg-3vh {
+  margin-bottom: 3vh;
+}
+
+.wdth-100 {
+  width: 100%;
+}
+
+.input-field {
+  padding: 3%;
+  background-color: #fcfcfc;
+  color: #424242;
+  border: 2px solid #E0E0E0;
+  border-radius: 2vmin;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  padding: 0;
+  border: 2px solid rgba(97, 97, 97, 0.6);
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  transition: outline 0.1s;
+}
+
+input[type="radio"]:not(:disabled):checked {
+  border-color: #ff9800;
+  background-color: #ff9800;
+  background-clip: content-box;
+  padding: 2px;
+  background-image: radial-gradient(circle,
+    #ff9800 0%,
+    #ff9800 50%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+
+/* Color classes */
+.bg-red {
+  background-color: #FF6347 !important;
+}
+
+.bg-primary-green {
+    background-color: #4CAF50;
+}
+.bg-secondary-green {
+    background-color: #8bc34a;
+}
+.bg-accent-orange {
+    background-color: #ff9800;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-light-grey {
+    background-color: #f0f0f0;
+}
+
+.fg-primary-green {
+    color: #4CAF50;
+}
+.fg-secondary-green {
+    color: #8bc34a;
+}
+.fg-accent-orange {
+    color: #ff9800;
+}
+.fg-white {
+    color: #ffffff;
+}
+.fg-gray {
+    color: #616161;
+}
+
+

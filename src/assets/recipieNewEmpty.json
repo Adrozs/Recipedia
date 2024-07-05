@@ -1,0 +1,43 @@
+{
+    "is_Favorite": false,
+    "image_url": null,
+    "name": "",
+    "rating": 0,
+    "allergens": {
+        "beef": false,
+        "chicken": false,
+        "pork": false,
+        "fish": false,
+        "shellfish": false,
+        "vegan": false,
+        "milk": false,
+        "gluten": false,
+        "nuts": false,
+        "soy": false,
+        "eggs": false,
+        "sesame": false
+    },
+    "time": "",
+    "ingredients": [
+        {
+            "amount": null,
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "instructions": [
+        ""
+    ],
+    "nutrition": {
+        "energy": null,
+        "fat": null,
+        "salt": null,
+        "carbs": null,
+        "protein": null
+    },
+    "tags": [
+        {
+            "value": ""
+        }
+    ]
+}

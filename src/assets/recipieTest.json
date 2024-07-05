@@ -2,24 +2,25 @@
     "recipie": [
         {
             "recipie_id" : 1,
-            "image_url" : "https://design4users.com/wp-content/uploads/2023/03/food-illustration-by-helen-lee.jpg",
-            "name": "Köttfärsås och spagetti ",
+            "is_Favorite": true,
+            "image_url" : "https://design4users.com/wp-content/uploads/2023/03/helen-lee-food-illustration-5.jpg",
+            "name": "Per Morbergs pasta salsiccia classico ",
             "rating": 3.5,
             "allergens": {
-            "beef": true,
-            "chicken": false,
-            "pork": false,
-            "fish": false,
-            "shellfish": false,
-            "vegan": false,
-            "milk": true,
-            "gluten": true,
-            "nuts": false,
-            "soy": true,
-            "eggs": true,
-            "sesame": false
+                "beef": true,
+                "chicken": true,
+                "pork": true,
+                "fish": true,
+                "shellfish": true,
+                "vegan": true,
+                "milk": true,
+                "gluten": true,
+                "nuts": true,
+                "soy": true,
+                "eggs": true,
+                "sesame": true
             },
-            "time": "60+ min",
+            "time": "< 30 min",
             "ingredients": [
                 {
                     "amount": 500,
@@ -49,6 +50,138 @@
             ],
             "instructions": [ 
                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius. Suspendisse potenti. Sed aliquet ligula at convallis iaculis. Sed quis rhoncus ante, pretium aliquam enim. Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. Maecenas dui sem, vulputate at pellentesque vel, finibus in ligula",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius.",
+                "Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. "
+            ],
+            "nutrition": {
+                "energy": 596,
+                "fat": 21,
+                "salt": 1,
+                "carbs": 59,
+                "protein": 44
+            },
+            "tags": [
+                {
+                    "value": "TEST-TAG"
+                }
+            ]
+        },
+        {
+            "recipie_id": 2,
+            "image_url": "https://design4users.com/wp-content/uploads/2023/03/food-illustration-by-helen-lee.jpg",
+            "is_Favorite": false,
+            "name": "Köttfärsås och Köttfärsås ",
+            "rating": 2,
+            "allergens": {
+                "beef": true,
+                "chicken": true,
+                "pork": true,
+                "fish": false,
+                "shellfish": false,
+                "vegan": false,
+                "milk": false,
+                "gluten": false,
+                "nuts": false,
+                "soy": false,
+                "eggs": false,
+                "sesame": false
+            },
+            "time": "60+ min",
+            "ingredients": [
+                {
+                    "amount": 500,
+                    "unit": "g",
+                    "name": "pasta"
+                },
+                {
+                    "amount": 2,
+                    "unit": "dl",
+                    "name": "crushed tomatoes"
+                },
+                {
+                    "amount": 1,
+                    "unit": "tbs",
+                    "name": "salt"
+                },
+                {
+                    "amount": 14,
+                    "unit": null,
+                    "name": "eggs"
+                },
+                {
+                    "amount": 10,
+                    "unit": "dl",
+                    "name": "milk"
+                }
+            ],
+            "instructions": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius. Suspendisse potenti. Sed aliquet ligula at convallis iaculis. Sed quis rhoncus ante, pretium aliquam enim. Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. Maecenas dui sem, vulputate at pellentesque vel, finibus in ligula",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius.",
+                "Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. "
+            ],
+            "nutrition": {
+                "energy": 596,
+                "fat": 21,
+                "salt": 1,
+                "carbs": 59,
+                "protein": 44
+            },
+            "tags": [
+                {
+                    "value": "TEST-TAG"
+                }
+            ]
+        },
+        {
+            "recipie_id": 3,
+            "image_url": "https://design4users.com/wp-content/uploads/2023/03/helen-lee-food-illustration-20.jpg",
+            "is_Favorite": true,
+            "name": "spagetti och spagetti ",
+            "rating": 5,
+            "allergens": {
+                "beef": false,
+                "chicken": false,
+                "pork": false,
+                "fish": false,
+                "shellfish": false,
+                "vegan": true,
+                "milk": true,
+                "gluten": true,
+                "nuts": false,
+                "soy": true,
+                "eggs": true,
+                "sesame": false
+            },
+            "time": 1,
+            "ingredients": [
+                {
+                    "amount": 500,
+                    "unit": "g",
+                    "name": "pasta"
+                },
+                {
+                    "amount": 2,
+                    "unit": "dl",
+                    "name": "crushed tomatoes"
+                },
+                {
+                    "amount": 1,
+                    "unit": "tbs",
+                    "name": "salt"
+                },
+                {
+                    "amount": 14,
+                    "unit": null,
+                    "name": "eggs"
+                },
+                {
+                    "amount": 10,
+                    "unit": "dl",
+                    "name": "milk"
+                }
+            ],
+            "instructions": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius. Suspendisse potenti. Sed aliquet ligula at convallis iaculis. Sed quis rhoncus ante, pretium aliquam enim. Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. Maecenas dui sem, vulputate at pellentesque vel, finibus in ligula",
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate congue varius.",
                 "Maecenas feugiat a nunc sit amet bibendum. Aenean sed tristique nibh. Aenean quis nisi tortor. "
             ],

@@ -1,8 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import CollectionCard from "../components/recipie_collections_components/CollectionCard.jsx"
 import "../styles/recipie_collection_styles/RecipieCollections.css"
 
@@ -11,20 +10,11 @@ import TestCollection from '../assets/recipieCollections.json';
 
 
 export const RecipieCollections = () => {
-    
-    // Go to previous page
-    const navigate = useNavigate();
 
-    // Handles going back return button
-    const handleBackClick = () => {
-        navigate(-1);
-    };
+
 
     return (
         <main className="content-width">
-            <div onClick={handleBackClick}>
-                <img className='back-icon icons' src="https://img.icons8.com/ios-glyphs/616161/150/circled-chevron-left" alt="back arrow" />
-            </div>
             <h1 className="primary-font bold-text">Your recipies</h1>
             
             <InputGroup className="mb-3">
@@ -39,20 +29,19 @@ export const RecipieCollections = () => {
             </InputGroup>
 
             {TestCollection.collections.map((collection, i) => (
-            <a className='collection-link' key={i} href={`/collections/${collection.collection_id}`}>
-            <section className="recipie-collection shadow" style={{backgroundImage: `url(${collection.image_url})`}}> 
+            <section key={i} className="recipie-collection shadow">
                 <div className="options-icon-container">
                     <img className='options-icon icons' src="https://img.icons8.com/ios-glyphs/FFFFFF/150/ellipsis" alt="options" />
                 </div>                  
                     <h2 className="primary-font"> {collection.title} </h2>
-                    <p>{collection.total_recipies} recipies</p>   
+                    <p>17 recipies</p>   
+                    <Link to={`/collections/${collection.collection_id}`}>GOTO</Link>                                        
             </section>
-            </a>
             ))}  
 
-            <div className="add-item shadow">
+            <section className="add-collection shadow">
                 <img className='icons' src="https://img.icons8.com/ios-glyphs/FFFFFF/150/plus" alt="options" />
-            </div>   
+            </section>   
         </main>
     )
 }

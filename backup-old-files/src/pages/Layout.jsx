@@ -72,7 +72,7 @@ export const Layout = () => {
     return (
         <>
             {/* Navigation */}
-            {/* <div className="nav-color-fade"></div> */}
+            <div className="nav-color-fade"></div>
             <header className='navbar content-width'>
                 {/* <Link to="/" id="logo"><img src={Logo} alt="Adrian's Logo. A rose combined with a mountain." /></Link> */}
                 {/* Hamburger menu */}
@@ -81,7 +81,7 @@ export const Layout = () => {
                     <span className="material-symbols-outlined">menu</span>
                 </label> */}
                 {/* Nav links */}
-                {/* <nav className={`nav-menu ${isNavVisible ? 'is-visible' : ''}`}>
+                <nav className={`nav-menu ${isNavVisible ? 'is-visible' : ''}`}>
                     <ul>
                         <li><NavLink to="/" onClick={closeNav}>Home</NavLink ></li>
                         <li><NavLink to="/about" onClick={closeNav}>About</NavLink></li>
@@ -89,7 +89,7 @@ export const Layout = () => {
                         <li><NavLink to="/resume" onClick={closeNav}>Resumé</NavLink></li>
                         <li><NavLink to="/contact" id='hire-me-button' onClick={closeNav}>Get in touch!</NavLink></li>
                     </ul>
-                </nav> */}
+                </nav>
                 {/* <span className="material-symbols-outlined" id="theme-toggle" onClick={toggleLightMode}>{isLightMode ? 'dark_mode' : 'light_mode'}</span> */}
             </header>
             {/* Webpage */}
