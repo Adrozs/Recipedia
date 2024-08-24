@@ -95,6 +95,7 @@ export const Recipie = () => {
     // };
 
     // Handle portion increase and decrease
+   
     const portionIncrease = () => {
         const newPortionSize = portionSize + 2;
         setPortionSize(newPortionSize);
@@ -161,7 +162,7 @@ export const Recipie = () => {
             <section className="recipie-info-container content-width">
 
                 {/* Buttons options & saved */}
-                <div className='icon-container'>
+                <div className='recipe-icon-container'>
                     <img onClick={toggleHeart} className='heart-icon icons' src={`https://img.icons8.com/ios-glyphs/${heartColor}/150/${heartIcon}`} alt="heart" />
                     <img onClick={toggleOptions} className='options-icon icons' src="https://img.icons8.com/ios-glyphs/FFFFFF/150/ellipsis" alt="options" />
                 </div>
@@ -223,7 +224,12 @@ export const Recipie = () => {
                         portionDeacrease={portionDecrease}
                     />
                 </div>
-                <Ingredients ingredients={recipieData.ingredients} ingredientAmounts={ingredientAmounts}/>
+
+                <div className='content-width'>
+                    <Ingredients ingredients={recipieData.ingredients} ingredientAmounts={ingredientAmounts}/>
+                </div>
+
+                {/* ADD SO THIS CREATES A NEW SHOPPINGLIST */}
                 <button className='myBtns-primary'>Add to shoppinglist</button>
             </section>
 

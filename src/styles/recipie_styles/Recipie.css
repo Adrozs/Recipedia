@@ -37,7 +37,7 @@
     color: #ffffff;
 }
 
-.icon-container {
+.recipe-icon-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;

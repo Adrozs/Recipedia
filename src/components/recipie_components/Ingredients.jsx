@@ -20,7 +20,7 @@ export const Ingredients = ({ ingredients , ingredientAmounts}) => {
     };
 
     return (
-        <section className='content-width'>
+        <section>
             <ul className='ingredients-container'>
                 {ingredients.map((ingredient, i) => (
                     <li className={`ingredient shadow ${checkedState[i] ? 'crossed-off' : ''}`} key={i} onClick={() => handleCheckboxClick(i)}>

@@ -1,0 +1,44 @@
+{
+    "shoppinglist" :[
+    {
+        "shoppinglist_id": 1,
+        "title": "To buy 18/7",
+        "items": [
+        {
+            "amount": 500,
+            "unit": "g",
+            "name": "pasta"
+        },
+        {
+            "amount": 2,
+            "unit": "dl",
+            "name": "crushed tomatoes"
+        },
+        {
+            "amount": 1,
+            "unit": "tbs",
+            "name": "salt"
+        },
+        {
+            "amount": 14,
+            "unit": null,
+            "name": "eggs"
+        },
+        {
+            "amount": 10,
+            "unit": "dl",
+            "name": "milk"
+        }]
+    },
+    {
+        "shoppinglist_id": 2,
+        "title": "For cinnamon rolls",
+        "items": [
+            {
+                "amount": 1337,
+                "unit": "gaziljoner",
+                "name": "älgbajs på burk"
+            }
+        ]
+    }
+]}

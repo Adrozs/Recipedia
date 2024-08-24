@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import recipiesData from '../assets/recipieList.json';
+import recipiesData from '../../assets/recipieList.json';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import "../styles/recipie_collection_styles/RecipieList.css"
+import "../../styles/recipie_collection_styles/RecipieList.css"
 
 const useFitText = (ref, minFontSize) => {
     useEffect(() => {
@@ -60,7 +60,7 @@ export const RecipiesList = () => {
 
     // Handles going back return button
     const handleBackClick = () => {
-        navigate(-1);
+        navigate(`/collections/`)
     };
     
 
@@ -71,15 +71,13 @@ export const RecipiesList = () => {
             </div>
             <h1>Recipes in Collection {collectionId}</h1>
 
-            <InputGroup className="mb-3">
+            <InputGroup className="search-bar">
                 <Form.Control
                     placeholder="Search your recipies..."
                     aria-label="Search recipies"
                     aria-describedby="basic-addon2"
                 />
-                <Button variant="outline-secondary" id="button-addon2">
-                    Search
-                </Button>
+                <Button id="button-addon2"> Search </Button>
             </InputGroup>
 
             {recipies.map((recipie, i) => {

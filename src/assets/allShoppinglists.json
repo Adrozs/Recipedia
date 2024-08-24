@@ -1,0 +1,16 @@
+{
+    "shoppinglists": [
+        {
+            "shoppinglist_id": 1,
+            "title": "To purchase 18/7"
+        },
+        {
+            "shoppinglist_id": 2,
+            "title": "For cinnamon rolls"
+        },
+        {
+            "shoppinglist_id": 3,
+            "title": "To purchase for Christmas"
+        }
+    ]
+}

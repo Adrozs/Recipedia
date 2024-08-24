@@ -3,11 +3,11 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CollectionCard from "../components/recipie_collections_components/CollectionCard.jsx"
-import "../styles/recipie_collection_styles/RecipieCollections.css"
+import CollectionCard from "../../components/recipie_collections_components/CollectionCard.jsx"
+import "../../styles/recipie_collection_styles/RecipieCollections.css"
 
 // TODO: TEMP REMOVE WHEN API IS IMPLEMENTED
-import TestCollection from '../assets/recipieCollections.json';
+import TestCollection from '../../assets/recipieCollections.json';
 
 
 export const RecipieCollections = () => {
@@ -17,7 +17,7 @@ export const RecipieCollections = () => {
 
     // Handles going back return button
     const handleBackClick = () => {
-        navigate(-1);
+        navigate(`/`)
     };
 
     return (
@@ -25,17 +25,15 @@ export const RecipieCollections = () => {
             <div onClick={handleBackClick}>
                 <img className='back-icon icons' src="https://img.icons8.com/ios-glyphs/616161/150/circled-chevron-left" alt="back arrow" />
             </div>
-            <h1 className="primary-font bold-text">Your recipies</h1>
+            <h1 className="primary-font">Your recipies</h1>
             
-            <InputGroup className="mb-3">
+            <InputGroup className="search-bar">
                 <Form.Control
                     placeholder="Search your recipies..."
                     aria-label="Search recipies"
                     aria-describedby="basic-addon2"
                 />
-                <Button variant="outline-secondary" id="button-addon2">
-                    Search
-                </Button>
+                <Button id="button-addon2"> Search </Button>
             </InputGroup>
 
             {TestCollection.collections.map((collection, i) => (

@@ -101,12 +101,6 @@ export const RecipieEdit = () => {
         678, 36, 4, 53, 34
     ]
 
-    // Stars / rating
-    // const totalStars = 5;
-    // const filledStars = Math.floor(starRating);
-    // const hasHalfStar = starRating % 1 === 0.5; // Check if half star exists
-    // const emptyStars = totalStars - filledStars - (hasHalfStar ? 1 : 0);
-
     // Handles going back/return button
     const handleBackClick = () => {
         navigate(-1);
@@ -183,6 +177,12 @@ export const RecipieEdit = () => {
         element.style.height = 'auto';
         element.style.height = element.scrollHeight + 'px';
     };
+
+    const handleSaveClick = () => {
+        // Add code to save to db here
+
+        navigate(`/recipie/${recipieId}`);
+    }
 
     return (
         <main className="edit-recipie-container">
@@ -398,8 +398,8 @@ export const RecipieEdit = () => {
 
 
             {/* Save button */}
-            <div className='center-child'>
-                <button className='myBtns-primary mg-3vh wdth-100'>Save changes</button>
+            <div className="save-button shadow" onClick={() => handleSaveClick()}>
+                <p>Save changes</p>
             </div>
 
             </section>
